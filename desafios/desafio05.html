@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de medidas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input{
+            padding: 20px;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversor de Medidas</h1>
+    <input id="conversor" type="button" value="Converter" onclick="clicar()">
+    <p id="resultado">Clique no botão acima para iniciar.</p>
+
+    <script>
+        function clicar(){
+            var medidas = document.getElementById('conversor');
+            var res = document.getElementById('resultado')
+            var distancia = Number(prompt('Diga uma distância em metros (m)'))
+        }
+    </script>
+</body>
+</html>
