@@ -17,11 +17,11 @@
             var nacionalidade = document.getElementById('pais')
             var resul = document.getElementById('resultado')
             var pais = nacionalidade
-
+            resul.innerHTML += `<p>vivendo em ${pais.value} </p>`
             if(pais.value != 'brasil'){
-                resul.innerHTML += 'você e estrangeiro(a)'
+                resul.innerHTML += '<p>você e <strong>estrangeiro(a)</strong></p>'
             }else{
-                resul.innerHTML += 'você e brasileiro(a)'
+                resul.innerHTML += '<p>você e <strong>brasileiro(a)</strong></p>'
             }
             
         }
